@@ -18,6 +18,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
@@ -176,7 +177,7 @@ Column (modifier = Modifier
 
                 ) {
                     Icon(
-                        imageVector = Icons.Default.Search,
+                        imageVector = Icons.Default.List,
                         contentDescription = null,
                     )
                 Text(
@@ -187,41 +188,29 @@ Column (modifier = Modifier
         }
 
     }
+
 }
-
-
-
-     /*   Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(Color.DarkGray)
-                .padding(16.dp)
-        ) {
-
-        }
         Column(
             modifier = Modifier
-                .padding(vertical = 48.dp)
-                .padding(horizontal = 16.dp)
-
                 .fillMaxSize()
+                .background(Color.Magenta),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
 
-                .background(Color.Cyan)
-                .padding(vertical = 32.dp),
-
-            horizontalAlignment = Alignment.CenterHorizontally
-
-
-        ) {
-
+        ){
             Text(
-                text = "Encabezado",
-                fontSize = 24.sp,
+                text = "Pie de pagina",
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
-            )
 
-        }*/
+            )
+        }
+
+
+
+
     }
+
 }
 
 
